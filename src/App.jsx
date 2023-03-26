@@ -1,6 +1,6 @@
 
 import Type2 from "./components/Type2";
-import Type1 from "./components/type1";
+import Type1 from "./components/Type1";
 
 
 function App() {

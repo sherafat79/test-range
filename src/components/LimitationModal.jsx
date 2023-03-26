@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./modal";
+import Modal from "./Modal";
 import Input from "./Input";
 import CustomSelect from "./CustomSelect";
 import SubmitBtn from "./SubmitBtn";
