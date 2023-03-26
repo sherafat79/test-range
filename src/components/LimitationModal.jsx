@@ -12,22 +12,26 @@ const validation = Yup.object().shape({
   area: Yup.number().required(" انتخاب نوع محدوده اجباری است")
     
 });
-const areas = [
+export const areas = [
   {
     value: 1,
     label: "غیرقابل قبول",
+    color:"red"
   },
   {
     value: 2,
     label: "اخطار",
+    color:"yellow"
   },
   {
     value: 3,
     label: "هشدار",
+    color:"orange"
   },
   {
     value: 4,
     label: "قابل قبول",
+    color:"green"
   },
 ];
 const LimitationModal = ({ show, closeHandler,submitHandler }) => {

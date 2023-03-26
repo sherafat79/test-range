@@ -16,24 +16,22 @@ const Range = ({ count, green, red, orange, yellow }) => {
         let yellowRange = rangeArr(yellow[0], yellow[1]);
         let redRange = rangeArr(red[0], red[1]);
         return (
-          <>
-            <span
-              key={index}
-              className={`h-full ${
-                greenRange.includes(num)
-                  ? "bg-green-400"
-                  : orangeRange.includes(num)
-                  ? "bg-orange-400"
-                  : yellowRange.includes(num)
-                  ? "bg-yellow-400"
-                  : orangeRange.includes(num)
-                  ? "bg-orange-400"
-                  : redRange.includes(num)
-                  ? "bg-red-400"
-                  : ""
-              }   ${index+1===(count)?"border-l-4 border-l-black":"border-l-2 border-l-gray-400"} w-full `}
-            ></span>
-          </>
+          <span
+          key={index}
+          className={`h-full ${
+            greenRange.includes(num)
+              ? "bg-green-400"
+              : orangeRange.includes(num)
+              ? "bg-orange-400"
+              : yellowRange.includes(num)
+              ? "bg-yellow-400"
+              : orangeRange.includes(num)
+              ? "bg-orange-400"
+              : redRange.includes(num)
+              ? "bg-red-400"
+              : ""
+          }   ${index+1===(count)?"border-l-4 border-l-black":"border-l-2 border-l-gray-400"} w-full `}
+        ></span>
         );
       })}
     </div>
